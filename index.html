@@ -5,9 +5,36 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Rock Paper Scissors</title>
-   <script src="script.js"></script>
+   <script src="script.js" defer></script>
 </head>
 <body>
+   <div id="div"></div>
   
+  <script>
+      const resultDisplayTitle = document.querySelector('#div');
+      resultDisplayTitle.textContent = 'RESULTS';
+
+      const resultDisplay = document.createElement('p');
+      resultDisplay.classList.add('resultDisplay');
+   
+      const Rock = document.createElement('button');
+      Rock.classList.add('Rock');
+      Rock.textContent = 'Rock';
+
+      const Paper = document.createElement('button');
+      Paper.classList.add('Paper');
+      Paper.textContent = 'Paper';
+
+      const Scissors = document.createElement('button');
+      Scissors.classList.add('Scissors');
+      Scissors.textContent = 'Scissors';
+
+      div.appendChild(resultDisplay);
+      div.appendChild(Rock);
+      div.appendChild(Paper);
+      div.appendChild(Scissors);
+
+
+  </script>
 </body>
 </html>
